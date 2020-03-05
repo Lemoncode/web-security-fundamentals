@@ -47,3 +47,11 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4
 ## Reading JWT Payload
 
 * Let's check that we can read this payload. 
+
+```js
+let data = 'eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ';
+let buff = Buffer.from(data, 'base64'); // new Buffer(data, 'base64');
+let text = buff.toString('ascii');
+
+console.log(text);
+```
