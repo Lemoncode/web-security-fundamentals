@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.stopPropagation();
         httpClientService.get('http://localhost:3050/api/cars')
             .then((result) => console.log(result))
-            .catch((err) => console.log(err));
+            .catch((err) => console.log(err))
     });
     /*diff*/
 });

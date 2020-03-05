@@ -16,8 +16,8 @@ const jwtCheck = expressjwt({
 });
 
 
-// app.use('/api/cars', cars);
-app.use('/api/cars', jwtCheck, cars);
+app.use('/api/cars', cars);
+// app.use('/api/cars', jwtCheck, cars);
 
 app.set('port', process.env.PORT || 3050);
 app.listen(app.get('port'));

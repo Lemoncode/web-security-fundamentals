@@ -1,0 +1,19 @@
+{
+  "name": "03_client_security_vanilla",
+  "version": "1.0.0",
+  "description": "We're going to create a new app that will contain a _login form_, if we're _authenticated_, the response will return a _JWT_, that we will use to call a _secure API_. If everything goes fine we well allow to access to server resources.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
