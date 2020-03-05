@@ -30,7 +30,7 @@ const generateToken = (user, expiresIn = '3 hours') => (
             sub: user.id,
             username: user.name,
         },
-        'mysupersecret',
+        'mysupersecretkey',
         { expiresIn: expiresIn }
     )
 );

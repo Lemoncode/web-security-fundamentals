@@ -12,6 +12,7 @@ app.use(cors());
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
     const { status, response } = resolveLogin(username, password);
+    console.log(status, response);
     res.status(status).send(response);
 });
 
